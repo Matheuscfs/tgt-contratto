@@ -1,0 +1,6 @@
+{
+  "appId": "com.contratto.app",
+  "appName": "Contrato",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
