@@ -54,14 +54,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ onNavigate, onLogin }) => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700">E-mail</label>
-                            <input type="email" id="email" required placeholder="seu@email.com" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                            <input name="email" type="email" id="email" required placeholder="seu@email.com" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
                         </div>
                         <div>
                             <div className="flex justify-between items-center">
                                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">Senha</label>
                                 <a onClick={() => onNavigate ? onNavigate('forgotPassword') : navigate('/forgot')} className="text-sm text-primary hover:underline cursor-pointer">Esqueceu a senha?</a>
                             </div>
-                            <input type="password" id="password" required placeholder="********" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                            <input name="password" type="password" id="password" required placeholder="********" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
                         </div>
                         <button type="submit" className="w-full py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                             Entrar
